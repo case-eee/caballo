@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Mis Caballos</h3>
+  <h3>
+  <% @caballos.each do |caballo| %>
+    <%= erb :"caballos/_caballo", locals: {partial_caballo: caballo} %>
+  <% end %>
+  </h3>
+
+  <a id="new-caballo-link" href="/caballos/new">Create a new caballo here</a>
+
+</div>
